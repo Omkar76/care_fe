@@ -93,7 +93,7 @@ export const Feed: React.FC<IFeedProps> = ({ consultationId, facilityId }) => {
     return () => clearTimeout(timeout);
   }, [cameraState]);
 
-  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+  const isIOS = true; ///iPad|iPhone|iPod/.test(navigator.userAgent);
 
   const liveFeedPlayerRef = useRef<HTMLVideoElement | ReactPlayer | null>(null);
 
@@ -465,7 +465,7 @@ export const Feed: React.FC<IFeedProps> = ({ consultationId, facilityId }) => {
         {isIOS ? (
           <ReactPlayer
             url={url}
-            ref={liveFeedPlayerRef.current as any}
+            ref={liveFeedPlayerRef as any}
             controls={false}
             playsinline={true}
             playing={true}

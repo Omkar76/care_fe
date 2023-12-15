@@ -146,7 +146,7 @@ export default function PatientInfoCard(props: {
       )}
 
       <section className="flex flex-col items-center justify-between space-y-3 lg:flex-row lg:space-x-2 lg:space-y-0">
-        <div className="flex w-full flex-col bg-white px-4 py-2 lg:w-7/12 lg:flex-row lg:p-6">
+        <div className="flex w-full flex-row justify-center gap-2 bg-white px-4 py-2 lg:w-7/12 lg:flex-row lg:justify-normal lg:justify-start lg:p-6">
           {/* Can support for patient picture in the future */}
           <div className="mt-2 flex flex-col items-center">
             <div
